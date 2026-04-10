@@ -1,0 +1,37 @@
+.section-contact {
+    width: 90%;
+    max-width: 1100px;
+    margin: 4rem auto;
+    text-align: center;
+}
+
+.section-contact h2 {
+    color: var(--color-monochromatic-1);
+    margin-bottom: 2rem;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contact input,
+#contact textarea {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#contact button {
+    padding: 12px;
+    background: var(--color-monochromatic-1);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#form-status {
+    margin-top: 15px;
+    font-weight: 500;
+}

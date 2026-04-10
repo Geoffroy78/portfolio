@@ -1,0 +1,12 @@
+<!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>{{ post.title }}</h3>
+    <p class="company">{{ post.company }}</p>
+    <p class="description">{{ post.description }}</p>
+    {% if post.start_date and post.end_date %}
+    <p class="dates">{{ post.start_date }} - {{ post.end_date }}</p>
+    {% endif %}
+
+    <p id="detail-contexte" class="hidden"></p>
+    <p id="detail-missions" class="hidden"></p>
+</div>

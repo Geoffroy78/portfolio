@@ -1,0 +1,90 @@
+/* Section expériences */
+.section-posts {
+    width: 90%;
+    max-width: 1200px;
+    margin: 4rem auto;
+}
+
+/* Titre section */
+.section-posts h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-monochromatic-1);
+}
+
+/* Grille des cartes */
+.grid-container {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+/* Carte expérience */
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Effet hover */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Titre */
+.card h3 {
+    color: var(--color-monochromatic-1);
+    margin-bottom: 0.4rem;
+}
+
+/* Entreprise */
+.card .company {
+    font-weight: bold;
+    color: var(--color-monochromatic-3);
+    margin-bottom: 0.5rem;
+}
+
+/* Description */
+.card .description {
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 0.5rem;
+}
+
+/* Dates */
+.card .dates {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.post-details {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+.card {
+    cursor: pointer;
+}

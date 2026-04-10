@@ -1,0 +1,126 @@
+/* ===================== */
+/* NAVBAR (desktop)      */
+/* ===================== */
+
+.navbar {
+    background: var(--color-monochromatic-1);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.navbar .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0.8rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    position: relative;
+    padding: 0.3rem 0;
+}
+
+.navbar-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: var(--color-monochromatic-4);
+    left: 0;
+    bottom: -4px;
+    transition: width 0.3s ease;
+}
+
+.navbar-links a:hover::after {
+    width: 100%;
+}
+
+.navbar-links a:hover {
+    color: var(--color-monochromatic-4);
+}
+
+/* ===================== */
+/* HAMBURGER (GAUCHE FIXE) */
+/* ===================== */
+
+.navbar-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%); /* ⬅️ centré verticalement */
+}
+
+.navbar-toggle span {
+    width: 28px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/* ===================== */
+/* RESPONSIVE MOBILE     */
+/* ===================== */
+@media (max-width: 768px) {
+
+    .navbar-toggle {
+        display: flex;
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 3001;
+    }
+
+    .navbar-links {
+        position: fixed;
+        inset: 0; /* 🔥 remplace top/left/width/height */
+
+        background: var(--color-monochromatic-1);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transform: translate3d(0, -8px, 0); /* GPU stable */
+        transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+
+        z-index: 3000;
+
+        will-change: transform, opacity;
+    }
+
+    .navbar-links.active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate3d(0, 0, 0);
+    }
+}

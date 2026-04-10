@@ -1,0 +1,121 @@
+/* Section profil */
+.section-profile {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        var(--color-monochromatic-5),
+        var(--color-monochromatic-4)
+    );
+}
+
+/* Carte profil */
+.profile-card {
+    display: flex;
+    width: 85%;
+    max-width: 1200px;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    gap: 2rem;
+}
+
+/* Colonne gauche */
+.profile-card > .left {
+    flex: 0 0 65%;
+}
+
+/* Colonne droite */
+.profile-card > .right {
+    flex: 0 0 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* centre verticalement */
+    align-items: center;       /* centre horizontalement */
+}
+
+/* Nom */
+.profile-card h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.2rem;
+    color: var(--color-monochromatic-1);
+}
+
+/* Profession */
+.profile-card h3 {
+    font-weight: 400;
+    color: var(--color-monochromatic-2);
+    margin-bottom: 1rem;
+}
+
+/* Image profil */
+.profile-card img {
+    width: 300px;
+    border-radius: 12px;
+    margin-bottom: 0rem;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    display: block;
+    margin: 0 auto;
+}
+
+/* Bouton CV */
+.btn-cv {
+    padding: 0.6rem 1.5rem;
+    background: var(--color-monochromatic-3);
+    color: white;
+    border-radius: 25px;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+    background: var(--color-monochromatic-1);
+    transform: translateY(-2px);
+}
+
+/* Compétences */
+.competences-marquee {
+    margin: 1.2rem 0;
+}
+
+.competences-marquee span {
+    display: inline-block;
+    background: var(--color-monochromatic-4);
+    color: var(--color-monochromatic-1);
+    padding: 0.3rem 0.8rem;
+    margin: 0.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* Objectif */
+.profile-card .objectif {
+    margin-top: 1rem;
+    line-height: 1.6;
+    white-space: pre-line;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-card > .left,
+    .profile-card > .right {
+        flex: 100%;
+    }
+
+    .profile-card img {
+        width: 150px;
+    }
+
+}

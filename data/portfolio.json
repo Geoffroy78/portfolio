@@ -1,0 +1,226 @@
+{
+    "user_name": "Geoffroy GRANIER",
+    "profession": "Ingénieur Systèmes Embarqués & IA",
+    "objectif" : "Ingénieur généraliste titulaire d'un double diplôme, spécialisé en systèmes embarqués et technologies de l’information.\nMon objectif est de concevoir, développer et déployer des solutions innovantes en intelligence artificielle et systèmes embarqués (drone, smartphone, robot ...).",
+    "linkedin": "https://www.linkedin.com/in/geoffroy-granier-4b62081b6/",
+    "github": "https://github.com/Geoffroy78/",
+    "posts": [
+        {
+            "title": "Ingénieur logiciels embarqués",
+            "company": "LASSENA",
+            "description": "Développement d’une solution interne de gestion d’eSIM (eUICC) avec automatisation et supervision des opérations IoT.",
+            "contexte": "",
+            "missions" :"",
+            "skills": ["Python", "Flask", "eSIM", "IoT"],
+            "start_date": "Jan 2025",
+            "end_date": "Juil 2025"
+        },
+        {
+            "title": "Ingénieur systèmes",
+            "company": "Thales",
+            "description": "Création d’un outil Python automatisant les mises à jour firmware des modems avec détection et interface graphique.",
+            "skills": ["Python", "USB", "TFTP", "Modems"],
+            "start_date": "Sept 2023",
+            "end_date": "Déc 2023"
+        },
+        {
+            "title": "Ingénieur systèmes",
+            "company": "Thales",
+            "description": "Développement d’un système embarqué de collecte et de monitoring temps réel de données capteurs pour un véhicule autonome.",
+            "skills": ["Python", "Raspberry Pi", "Pixhawk", "Grafana"],
+            "start_date": "Fév 2023",
+            "end_date": "Sept 2023"
+        },
+        {
+            "title": "Ingénieur logiciels embarqués",
+            "company": "TwinswHeel",
+            "description": "Développement d’outils de tests automatiques pour évaluer les performances et le comportement de robots autonomes de livraison.",
+            "skills": ["Python", "Robotique", "Tests automatisés", "Jupyter"],
+            "start_date": "Avr 2022",
+            "end_date": "Juil 2022"
+        },
+        {
+            "title": "Ouvrier sur chaîne",
+            "company": "Stellantis",
+            "description": "Participation à la chaîne de montage au secteur ferrage du site de Poissy avec installation de pièces sur robots industriels.",
+            "skills": ["Production industrielle", "Robotique", "Travail en équipe"],
+            "start_date": "Juil 2021",
+            "end_date": "Août 2021"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Segmentation d’IRM cardiaques (ACDC Challenge)",
+            "school": "École de technologie supérieure (ÉTS)",
+            "image": "irm_ai.png",
+            "description": "Développement de modèles U-Net pour segmenter automatiquement des IRM cardiaques (ventricules et myocarde) avec apprentissage semi-supervisé Mean Teacher afin d’améliorer la précision du diagnostic médical.",
+            "skills": ["Python", "Deep Learning", "Computer Vision", "U-Net"],
+            "start_date": "Sept 2024",
+            "end_date": "Déc 2024"
+        },
+        {
+            "title": "Jeu de Bowling en Réalité Virtuelle",
+            "school": "École de technologie supérieure (ÉTS)",
+            "image": "vr_bowling.jpg",
+            "description": "Développement d’un environnement immersif de bowling en réalité virtuelle avec Meta Quest 3 pour analyser l’impact de l’entraînement VR sur les performances réelles.",
+            "skills": ["Unity", "C#", "VR", "Game Development"],
+            "start_date": "Sept 2024",
+            "end_date": "Déc 2024"
+        },
+        {
+            "title": "Prédiction du désabonnement client",
+            "school": "École de technologie supérieure (ÉTS)",
+            "image": "churn_ai.png",
+            "description": "Création d’un modèle de Machine Learning pour prédire le churn client dans les télécommunications et déploiement dans une application PowerApps via Azure ML.",
+            "skills": ["Machine Learning", "Azure ML", "PowerApps", "Data Science"],
+            "start_date": "Avr 2024",
+            "end_date": "Juin 2024"
+        },
+
+        {
+            "title": "Prédiction d’abandon scolaire par IA",
+            "school": "École de technologie supérieure (ÉTS)",
+            "image": "dropout_ai.png",
+            "description": "Développement d’un système d’IA permettant de prédire le risque d’abandon scolaire à partir de données étudiantes avec API Flask et déploiement cloud.",
+            "skills": ["Machine Learning", "Python", "Flask", "Docker"],
+            "start_date": "Avr 2024",
+            "end_date": "Juin 2024"
+        },
+        {
+            "title": "Détection d’objets et estimation de profondeur",
+            "school": "École de technologie supérieure (ÉTS)",
+            "image": "vision_ai.png",
+            "description": "Pipeline de vision par ordinateur combinant YOLOv8 et estimation de profondeur monoculaire pour analyser une scène à partir d’une seule image.",
+            "skills": ["Python", "YOLOv8", "Computer Vision", "Deep Learning"],
+            "start_date": "Jan 2024",
+            "end_date": "Avr 2024"
+        },
+        {
+            "title": "Cluster Raspberry Pi – Simulation de trafic",
+            "school": "ECE Paris",
+            "image": "raspberry_cluster.png",
+            "description": "Création d’un cluster de Raspberry Pi simulant un réseau de feux de circulation coordonnés via communication distribuée.",
+            "skills": ["C", "Raspberry Pi", "Embedded Systems"],
+            "start_date": "Sept 2021",
+            "end_date": "Déc 2021"
+        },
+        {
+            "title": "Jeu Donkey Kong sur microcontrôleur PIC",
+            "school": "ECE Paris",
+            "image": "donkey_kong_pic.png",
+            "description": "Développement d’un jeu 2D embarqué sur microcontrôleur PIC avec affichage LCD, gestion des interruptions et sauvegarde EEPROM.",
+            "skills": ["Embedded C", "Microcontrollers", "PIC18F4550"],
+            "start_date": "Sept 2021",
+            "end_date": "Déc 2021"
+        },
+        {
+            "title": "Système RFID de reconnaissance des cartes étudiantes",
+            "school": "ECE Paris",
+            "image": "rfid_system.jpg",
+            "description": "Conception d’un système complet de lecture de cartes RFID avec PCB, microcontrôleur, interface Java et base de données pour la gestion des accès.",
+            "skills": ["Embedded C", "PCB Design", "Java", "RFID"],
+            "start_date": "Sept 2021",
+            "end_date": "Déc 2021"
+        },
+        {
+            "title": "Application de gestion de recrutement (Java)",
+            "school": "ECE Paris",
+            "image": "recruitment_app.png",
+            "description": "Développement d’une application Java orientée objet pour gérer les offres d’emploi, les candidatures et les interactions entre recruteurs et candidats.",
+            "skills": ["Java", "OOP", "Database"],
+            "start_date": "Sept 2020",
+            "end_date": "Déc 2020"
+        },
+        {
+            "title": "Gestion de base de données d’un aéroport",
+            "school": "ECE Paris",
+            "image": "airport_database.png",
+            "description": "Développement d’un système de gestion d’aéroport utilisant MySQL et une application C# pour gérer vols, passagers, bagages et personnel.",
+            "skills": ["C#", "MySQL", "Database"],
+            "start_date": "Sept 2019",
+            "end_date": "Déc 2019"
+        },
+        {
+            "title": "ECE CUP – Voiture télécommandée Arduino",
+            "school": "ECE Paris",
+            "image": "ece_cup_car.png",
+            "description": "Conception et programmation d’une voiture télécommandée basée sur Arduino capable d’interagir avec son environnement via une application mobile BLINK.",
+            "skills": ["Arduino", "C++", "Embedded Systems"],
+            "start_date": "Sept 2019",
+            "end_date": "Déc 2019"
+        },
+        {
+            "title": "Maison connectée avec Arduino",
+            "school": "ECE Paris",
+            "image": "smart_home_arduino.jpg",
+            "description": "Conception d’une maquette de maison connectée pilotée par Arduino permettant de gérer automatiquement l’éclairage selon la luminosité, la consommation d’énergie et l’ouverture des fenêtres. Un écran LCD1602 affiche les informations des différents capteurs.",
+            "skills": ["Arduino", "Embedded C", "IoT", "Sensors"],
+            "start_date": "Jan 2018",
+            "end_date": "Mars 2018"
+        }
+    ],
+    "competences": {
+        "Systèmes embarqués": ["ESP32", "eSIM", "Modem", "Robot", "Drone", "PCB", "Raspberry Pi", "Arduino", "FPGA", "Microcontroleur", "Linux", "Windows"],
+        "IA": ["Deep Learning", "Machine Learning", "Segmentation Sémantique", "Transformers", "Scikit-learn", "torch", "Azure ML"],
+        "Langages de Programmation": ["C++", "C", "Python", "Java", "HTML", "CSS", "JS", "VHDL", "ROS", "MATLAB"],
+        "Protocoles": ["HTTP/HTTPS", "TCP/IP", "UDP", "MQTT", "CAN", "USB", "I2C", "SPI"],
+        "Autres": ["Git", "UI/UX", "CI/CD", "Pilotage de drones"]
+    },
+    "map": {
+        "esp32": "fas fa-microchip",
+        "microcontroleur": "fas fa-microchip",
+        "microcontrôleur": "fas fa-microchip",
+        "arduino": "devicon-arduino-plain",
+        "raspberry pi": "devicon-raspberrypi-plain",
+        "fpga": "fas fa-microchip",
+        "pcb": "fas fa-microchip",
+        "esim": "fas fa-sim-card",
+        "eSIM": "fas fa-sim-card",
+        "modem": "fas fa-wifi",
+        "robot": "fas fa-robot",
+        "drone": "fas fa-helicopter",
+        "linux": "devicon-linux-plain",
+        "windows": "devicon-windows11-original",
+        
+        "deep learning": "fas fa-network-wired",
+        "machine learning": "fas fa-robot",
+        "segmentation sémantique": "fas fa-object-group",
+        "transformers": "fas fa-gears",
+        "scikit-learn": "devicon-scikitlearn-plain",
+        "torch": "devicon-pytorch-original",
+        "pytorch": "devicon-pytorch-original",
+        "azure ml": "devicon-azure-plain",
+
+        "c++": "devicon-cplusplus-plain",
+        "c": "devicon-c-plain",
+        "python": "devicon-python-plain",
+        "java": "devicon-java-plain",
+        "html": "devicon-html5-plain",
+        "css": "devicon-css3-plain",
+        "js": "devicon-javascript-plain",
+        "javascript": "devicon-javascript-plain",
+        "vhdl": "fas fa-microchip",
+        "ros": "devicon-ros-original",
+        "matlab": "fas fa-chart-line",
+
+        "http": "fas fa-globe",
+        "https": "fas fa-lock",
+        "http/https": "fas fa-globe",
+        "tcp/ip": "fas fa-network-wired",
+        "tcp": "fas fa-network-wired",
+        "udp": "fas fa-network-wired",
+        "mqtt": "fas fa-cloud",
+        "can": "fas fa-car-battery",
+        "usb": "fas fa-usb",
+        "i2c": "fas fa-microchip",
+        "spi": "fas fa-microchip",
+
+        "git": "devicon-git-plain",
+        "ui/ux": "fas fa-pen-ruler",
+        "design": "fas fa-pen-ruler",
+        "ci/cd": "fas fa-gears",
+        "cicd": "fas fa-gears",
+        "ci cd": "fas fa-gears",
+        "pilotage de drones": "fas fa-helicopter"
+    }
+}

@@ -1,0 +1,910 @@
+<html lang="fr"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./static/images/favicon.ico" type="image/x-icon">
+    <title>Portfolio - Geoffroy GRANIER</title>
+    <!-- CSS global -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />   -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/navbar.css">
+    <link rel="stylesheet" href="./static/css/profile.css">
+    <link rel="stylesheet" href="./static/css/competences.css">
+    <link rel="stylesheet" href="./static/css/post-card.css">
+    <link rel="stylesheet" href="./static/css/project-card.css">
+    <link rel="stylesheet" href="./static/css/footer.css">
+    <!-- Google Fonts exemple -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navbar -->
+    <nav class="navbar">
+    <div class="container">
+
+        <!-- Hamburger mobile -->
+        <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar-links">
+            <li><a href="#profile">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#posts">Expériences</a></li>
+            
+            <li><a href="#projects">Projets</a></li>
+            
+        </ul>
+
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main>
+        
+
+<!-- Section 1: Présentation -->
+<section id="profile" class="section-profile">
+    <div class="profile-card">
+        <!-- Colonne gauche -->
+        <div class="left">
+            <h1>Geoffroy GRANIER</h1>
+            <h3>Ingénieur Systèmes Embarqués &amp; IA</h3>
+            <!-- <div class="competences-marquee">
+                
+                    <span>Systèmes embarqués</span>
+                
+                    <span>IA</span>
+                
+                    <span>Langages de Programmation</span>
+                
+                    <span>Protocoles</span>
+                
+                    <span>Autres</span>
+                
+            </div> -->
+
+            <p class="objectif">
+                Ingénieur généraliste titulaire d'un double diplôme, spécialisé en systèmes embarqués et technologies de l’information.
+Mon objectif est de concevoir, développer et déployer des solutions innovantes en intelligence artificielle et systèmes embarqués (drone, smartphone, robot ...).
+            </p>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right">
+            <img src="./static/images/geoffroy.png" alt="Photo de Geoffroy GRANIER">
+            <a class="btn-cv" href="./static/cv/CV_Geoffroy_GRANIER.pdf" download="CV_Geoffroy_GRANIER.pdf">Télécharger CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section 1: Compétences -->
+<section id="competences" class="section-competences">
+    <h2>Compétences</h2>
+    <!-- boutons filtre -->
+    <div class="competences-filters">
+        <button class="filter-btn" data-filter="all">Tout</button>
+        
+        <button class="filter-btn active" data-filter="Systèmes embarqués">Systèmes embarqués</button>
+        
+        <button class="filter-btn" data-filter="IA">IA</button>
+        
+        <button class="filter-btn" data-filter="Langages de Programmation">Langages de Programmation</button>
+        
+        <button class="filter-btn" data-filter="Protocoles">Protocoles</button>
+        
+        <button class="filter-btn" data-filter="Autres">Autres</button>
+        
+    </div>
+    <!-- grille compétences -->
+    <div class="competences-grid">
+        
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>ESP32</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-sim-card"></i>
+                </div>
+                
+
+                <span>eSIM</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-wifi"></i>
+                </div>
+                
+
+                <span>Modem</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                
+
+                <span>Robot</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-helicopter"></i>
+                </div>
+                
+
+                <span>Drone</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>PCB</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-raspberrypi-plain"></i>
+                </div>
+                
+
+                <span>Raspberry Pi</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-arduino-plain"></i>
+                </div>
+                
+
+                <span>Arduino</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>FPGA</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>Microcontroleur</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-linux-plain"></i>
+                </div>
+                
+
+                <span>Linux</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Systèmes embarqués" style="display: block;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-windows11-original"></i>
+                </div>
+                
+
+                <span>Windows</span>
+            </div>
+            
+        
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                
+
+                <span>Deep Learning</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                
+
+                <span>Machine Learning</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-object-group"></i>
+                </div>
+                
+
+                <span>Segmentation Sémantique</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-gears"></i>
+                </div>
+                
+
+                <span>Transformers</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-scikitlearn-plain"></i>
+                </div>
+                
+
+                <span>Scikit-learn</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-pytorch-original"></i>
+                </div>
+                
+
+                <span>torch</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="IA" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-azure-plain"></i>
+                </div>
+                
+
+                <span>Azure ML</span>
+            </div>
+            
+        
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-cplusplus-plain"></i>
+                </div>
+                
+
+                <span>C++</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-c-plain"></i>
+                </div>
+                
+
+                <span>C</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-python-plain"></i>
+                </div>
+                
+
+                <span>Python</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-java-plain"></i>
+                </div>
+                
+
+                <span>Java</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-html5-plain"></i>
+                </div>
+                
+
+                <span>HTML</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-css3-plain"></i>
+                </div>
+                
+
+                <span>CSS</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-javascript-plain"></i>
+                </div>
+                
+
+                <span>JS</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>VHDL</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-ros-original"></i>
+                </div>
+                
+
+                <span>ROS</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Langages de Programmation" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                
+
+                <span>MATLAB</span>
+            </div>
+            
+        
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-globe"></i>
+                </div>
+                
+
+                <span>HTTP/HTTPS</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                
+
+                <span>TCP/IP</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                
+
+                <span>UDP</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-cloud"></i>
+                </div>
+                
+
+                <span>MQTT</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-car-battery"></i>
+                </div>
+                
+
+                <span>CAN</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-usb"></i>
+                </div>
+                
+
+                <span>USB</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>I2C</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Protocoles" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                
+
+                <span>SPI</span>
+            </div>
+            
+        
+            
+            
+            <div class="skill-card" data-category="Autres" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="devicon-git-plain"></i>
+                </div>
+                
+
+                <span>Git</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Autres" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-pen-ruler"></i>
+                </div>
+                
+
+                <span>UI/UX</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Autres" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-gears"></i>
+                </div>
+                
+
+                <span>CI/CD</span>
+            </div>
+            
+            
+            <div class="skill-card" data-category="Autres" style="display: none;">
+
+                
+                <div class="skill-icon">
+                    <i class="fas fa-helicopter"></i>
+                </div>
+                
+
+                <span>Pilotage de drones</span>
+            </div>
+            
+        
+    </div>
+</section>
+
+<!-- Section 2: Expériences -->
+<section id="posts" class="section-posts">
+    <h2>Expériences professionnelles</h2>
+    <div class="grid-container">
+        
+            <!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>Ingénieur logiciels embarqués</h3>
+    <p class="company">LASSENA</p>
+    <p class="description">Développement d’une solution interne de gestion d’eSIM (eUICC) avec automatisation et supervision des opérations IoT.</p>
+    
+    <p class="dates">Jan 2025 - Juil 2025</p>
+    
+</div>
+        
+            <!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>Ingénieur systèmes</h3>
+    <p class="company">Thales</p>
+    <p class="description">Création d’un outil Python automatisant les mises à jour firmware des modems avec détection et interface graphique.</p>
+    
+    <p class="dates">Sept 2023 - Déc 2023</p>
+    
+</div>
+        
+            <!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>Ingénieur systèmes</h3>
+    <p class="company">Thales</p>
+    <p class="description">Développement d’un système embarqué de collecte et de monitoring temps réel de données capteurs pour un véhicule autonome.</p>
+    
+    <p class="dates">Fév 2023 - Sept 2023</p>
+    
+</div>
+        
+            <!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>Ingénieur logiciels embarqués</h3>
+    <p class="company">TwinswHeel</p>
+    <p class="description">Développement d’outils de tests automatiques pour évaluer les performances et le comportement de robots autonomes de livraison.</p>
+    
+    <p class="dates">Avr 2022 - Juil 2022</p>
+    
+</div>
+        
+            <!-- app/templates/components/post_card.html -->
+<div class="card">
+    <h3>Ouvrier sur chaîne</h3>
+    <p class="company">Stellantis</p>
+    <p class="description">Participation à la chaîne de montage au secteur ferrage du site de Poissy avec installation de pièces sur robots industriels.</p>
+    
+    <p class="dates">Juil 2021 - Août 2021</p>
+    
+</div>
+        
+    </div>
+</section>
+
+<!-- Section 3: Projets -->
+<section id="projects" class="section-posts">
+    <h2>Projets</h2>
+    <div class="grid-container">
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="./static/images/irm_ai.png" alt="Segmentation d’IRM cardiaques (ACDC Challenge)">
+    </div>
+    
+
+    <h3>Segmentation d’IRM cardiaques (ACDC Challenge)</h3>
+    <p class="school">École de technologie supérieure (ÉTS)</p>
+    <p class="description">Développement de modèles U-Net pour segmenter automatiquement des IRM cardiaques avec apprentissage semi-supervisé.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>Python</span>
+        
+            <span>Deep Learning</span>
+        
+            <span>Computer Vision</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Sept 2024 - Déc 2024</p>
+    
+
+</div>
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="./static/images/vr_bowling.jpg" alt="Jeu de Bowling en Réalité Virtuelle">
+    </div>
+    
+
+    <h3>Jeu de Bowling en Réalité Virtuelle</h3>
+    <p class="school">École de technologie supérieure (ÉTS)</p>
+    <p class="description">Création d’un environnement VR de bowling avec Meta Quest 3 pour étudier l’impact de l’entraînement virtuel sur les performances réelles.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>Unity</span>
+        
+            <span>C#</span>
+        
+            <span>VR</span>
+        
+            <span>Game Development</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Sept 2024 - Déc 2024</p>
+    
+
+</div>
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="./static/images/churn_ai.jpg" alt="Prédiction du désabonnement client">
+    </div>
+    
+
+    <h3>Prédiction du désabonnement client</h3>
+    <p class="school">École de technologie supérieure (ÉTS)</p>
+    <p class="description">Développement et déploiement d’un modèle IA de prédiction du churn client intégré dans une application PowerApps via Azure ML.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>Machine Learning</span>
+        
+            <span>Azure ML</span>
+        
+            <span>PowerApps</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Avr 2024 - Juin 2024</p>
+    
+
+</div>
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="./static/images/vision_ai.png" alt="Détection d’objets et estimation de profondeur">
+    </div>
+    
+
+    <h3>Détection d’objets et estimation de profondeur</h3>
+    <p class="school">École de technologie supérieure (ÉTS)</p>
+    <p class="description">Pipeline de vision par ordinateur combinant YOLOv8 et estimation de profondeur monoculaire pour analyser une scène à partir d’une seule image.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>Python</span>
+        
+            <span>YOLOv8</span>
+        
+            <span>Computer Vision</span>
+        
+            <span>Deep Learning</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Jan 2024 - Avr 2024</p>
+    
+
+</div>
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="/static/images/raspberry_cluster.jpg" alt="Cluster Raspberry Pi – Simulation trafic">
+    </div>
+    
+
+    <h3>Cluster Raspberry Pi – Simulation trafic</h3>
+    <p class="school">ECE Paris</p>
+    <p class="description">Création d’un cluster de Raspberry Pi simulant un réseau de feux de circulation coordonnés via communication distribuée.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>C</span>
+        
+            <span>Raspberry Pi</span>
+        
+            <span>Embedded Systems</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Sept 2021 - Déc 2021</p>
+    
+
+</div>
+        
+            <!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    
+    <div class="card-image">
+        <img src="./static/images/donkey_kong_pic.jpg" alt="Jeu Donkey Kong sur microcontrôleur PIC">
+    </div>
+    
+
+    <h3>Jeu Donkey Kong sur microcontrôleur PIC</h3>
+    <p class="school">ECE Paris</p>
+    <p class="description">Développement d’un jeu 2D embarqué sur microcontrôleur PIC avec affichage LCD et sauvegarde EEPROM.</p>
+
+    <!-- Skills -->
+    
+    <div class="skills">
+        
+            <span>Embedded C</span>
+        
+            <span>Microcontrollers</span>
+        
+            <span>PIC18F4550</span>
+        
+    </div>
+    
+
+    
+    <p class="dates">Sept 2021 - Déc 2021</p>
+    
+
+</div>
+        
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h3>Geoffroy GRANIER</h3>
+            <p>Ingénieur Systèmes Embarqués &amp; IA</p>
+        </div>
+
+        <div class="footer-center">
+            <p>© Geoffroy GRANIER - Tous droits réservés</p>
+        </div>
+
+        <div class="footer-right">
+            
+            <a href="https://www.linkedin.com/in/geoffroy-granier-4b62081b6/" target="_blank">
+                <img src="./static/images/linkedin.svg" alt="LinkedIn">
+            </a>
+            
+
+            
+            <a href="https://github.com/Geoffroy78/" target="_blank">
+                <img src="./static/images/github.svg" alt="GitHub">
+            </a>
+            
+        </div>
+
+    </div>
+
+</footer>
+
+    <!-- JS global -->
+    <script src="./static/js/main.js"></script>
+
+</body></html>

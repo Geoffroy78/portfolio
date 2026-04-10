@@ -1,0 +1,51 @@
+/* app/static/css/style.css */
+:root {
+  --color-monochromatic-1: #003785;
+  --color-monochromatic-2: #1465bb;
+  --color-monochromatic-3: #2196f3;
+  --color-monochromatic-4: #81c9fa;
+  --color-monochromatic-5: #b9ffff;
+
+  /* Fonts */
+  --font-main: "Inter", sans-serif;
+
+  /* Tailles de police */
+  --font-size-title-xl: 2.5rem;
+  --font-size-title-lg: 2rem;
+  --font-size-title-md: 1.5rem;
+  --font-size-text: 1rem;
+  --font-size-small: 0.85rem;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--color-monochromatic-3);
+  margin: 0;
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+h1 {
+  font-size: var(--font-size-title-xl);
+}
+
+h2 {
+  font-size: var(--font-size-title-lg);
+
+}
+
+h3 {
+  font-size: var(--font-size-title-md);
+}
+
+p {
+  font-size: var(--font-size-text);
+}
+
+.small-text {
+  font-size: var(--font-size-small);
+}
+
+section {
+    scroll-margin-top: 80px; /* hauteur de ta navbar */
+}

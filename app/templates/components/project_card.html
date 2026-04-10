@@ -1,0 +1,28 @@
+<!-- app/templates/components/project_card.html -->
+<div class="card project-card">
+
+    {% if project.image %}
+    <div class="card-image">
+        <img src="{{ url_for('static', filename='images/' + project.image) }}" 
+             alt="{{ project.title }}">
+    </div>
+    {% endif %}
+
+    <h3>{{ project.title }}</h3>
+    <p class="school">{{ project.school }}</p>
+    <p class="description">{{ project.description }}</p>
+
+    <!-- Skills -->
+    {% if project.skills %}
+    <div class="skills">
+        {% for skill in project.skills %}
+            <span>{{ skill }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+
+    {% if project.start_date and project.end_date %}
+    <p class="dates">{{ project.start_date }} - {{ project.end_date }}</p>
+    {% endif %}
+
+</div>

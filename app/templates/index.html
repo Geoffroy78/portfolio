@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Section 1: Présentation -->
+<section id="profile" class="section-profile">
+    <div class="profile-card">
+        <!-- Colonne gauche -->
+        <div class="left">
+            <h1>{{ data.user_name }}</h1>
+            <h3>{{ data.profession }}</h3>
+            <!-- <div class="competences-marquee">
+                {% for skill in data.competences %}
+                    <span>{{ skill }}</span>
+                {% endfor %}
+            </div> -->
+
+            <p class="objectif">
+                {{ data.objectif }}
+            </p>
+        </div>
+
+        <!-- Colonne droite -->
+        <div class="right">
+            <img src="{{ url_for('static', filename='images/geoffroy.png') }}" alt="Photo de {{ data.user_name }}">
+            <a class="btn-cv" href="{{ url_for('main.download_cv') }}">Télécharger CV</a>
+        </div>
+    </div>
+</section>
+
+<!-- Section 1: Compétences -->
+<section id="competences" class="section-competences">
+    <h2>Compétences</h2>
+    <!-- boutons filtre -->
+    <div class="competences-filters">
+        <button class="filter-btn active" data-filter="all">Tout</button>
+        {% for category in data.competences %}
+        <button class="filter-btn" data-filter="{{ category }}">{{ category }}</button>
+        {% endfor %}
+    </div>
+    <!-- grille compétences -->
+    <div class="competences-grid">
+        {% for category, skills in data.competences.items() %}
+            {% for skill in skills %}
+            {% set icon_class = data.map.get(skill|lower) %}
+            <div class="skill-card" data-category="{{ category }}">
+
+                {% if icon_class %}
+                <div class="skill-icon">
+                    <i class="{{ icon_class }}"></i>
+                </div>
+                {% endif %}
+
+                <span>{{ skill }}</span>
+            </div>
+            {% endfor %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Section 2: Expériences -->
+<section id="posts" class="section-posts">
+    <h2>Expériences professionnelles</h2>
+    <div class="grid-container">
+        {% for post in data.posts %}
+            {% include 'components/post_card.html' %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- Section 3: Projets -->
+<section id="projects" class="section-posts">
+    <h2>Projets</h2>
+    <div class="grid-container">
+        {% for project in data.projects %}
+            {% include 'components/project_card.html' %}
+        {% endfor %}
+    </div>
+</section>
+
+<!-- <section id="contact" class="section-contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/TON_ID" method="POST">
+        <input type="text" name="name" placeholder="Votre nom" required>
+        <input type="email" name="email" placeholder="Votre email" required>
+        <textarea name="message" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+    </form>
+    <p id="form-status"></p>
+</section> -->
+
+{% endblock %}

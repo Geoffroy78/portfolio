@@ -1,0 +1,21 @@
+<nav class="navbar">
+    <div class="container">
+
+        <!-- Hamburger mobile -->
+        <div class="navbar-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="navbar-links">
+            <li><a href="#profile">Profil</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#posts">Expériences</a></li>
+            {% if data.projects %}
+            <li><a href="#projects">Projets</a></li>
+            {% endif %}
+        </ul>
+
+    </div>
+</nav>
