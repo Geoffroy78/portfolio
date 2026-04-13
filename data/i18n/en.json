@@ -183,11 +183,11 @@
   ],
 
   "competences": {
-    "Systèmes embarqués": ["ESP32", "eSIM", "Modem", "Robot", "Drone", "PCB", "Raspberry Pi", "Arduino", "FPGA", "Microcontroleur", "Linux", "Windows"],
-    "IA": ["Deep Learning", "Machine Learning", "Semantic Segmentation", "Transformers", "Scikit-learn", "torch", "Azure ML"],
-    "Langages de Programmation": ["C++", "C", "Python", "Java", "HTML", "CSS", "JS", "VHDL", "ROS", "MATLAB"],
-    "Protocoles": ["HTTP/HTTPS", "TCP/IP", "UDP", "MQTT", "CAN", "USB", "I2C", "SPI"],
-    "Autres": ["Git", "UI/UX", "CI/CD", "Drone piloting"]
+    "Embedded Systems": ["ESP32", "eSIM", "Modem", "Robot", "Drone", "PCB", "Raspberry Pi", "Arduino", "FPGA", "Microcontroleur", "Linux", "Windows"],
+    "AI": ["Deep Learning", "Machine Learning", "Semantic Segmentation", "Transformers", "Scikit-learn", "torch", "Azure ML"],
+    "Programming Languages": ["C++", "C", "Python", "Java", "HTML", "CSS", "JS", "VHDL", "ROS", "MATLAB"],
+    "Protocols": ["HTTP/HTTPS", "TCP/IP", "UDP", "MQTT", "CAN", "USB", "I2C", "SPI"],
+    "Others": ["Git", "UI/UX", "CI/CD", "Drone piloting"]
   },
   "map": {
         "esp32": "fas fa-microchip",

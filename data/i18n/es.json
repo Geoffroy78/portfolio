@@ -15,11 +15,11 @@
 
   "languages_map": {
     "fr": {
-      "label": "Français",
+      "label": "Francés",
       "icon": "fi fi-fr"
     },
     "en": {
-      "label": "English",
+      "label": "Inglés",
       "icon": "fi fi-gb"
     },
     "es": {
@@ -198,8 +198,7 @@
 
   "map": {
     "esp32": "fas fa-microchip",
-    "microcontroleur": "fas fa-microchip",
-    "microcontrôleur": "fas fa-microchip",
+    "microcontrolador": "fas fa-microchip",
     "arduino": "devicon-arduino-plain",
     "raspberry pi": "devicon-raspberrypi-plain",
     "fpga": "fas fa-microchip",
@@ -213,7 +212,7 @@
     "windows": "devicon-windows11-original",
     "deep learning": "fas fa-network-wired",
     "machine learning": "fas fa-robot",
-    "segmentation sémantique": "fas fa-object-group",
+    "segmentación semántica": "fas fa-object-group",
     "transformers": "fas fa-gears",
     "scikit-learn": "devicon-scikitlearn-plain",
     "torch": "devicon-pytorch-original",
