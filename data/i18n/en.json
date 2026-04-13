@@ -6,8 +6,8 @@
   "github": "https://github.com/Geoffroy78/",
   "navbar": {
         "profile": "Profile",
-        "competences": "Competences",
-        "experiences": "Experiences",
+        "competences": "Skills",
+        "experiences": "Experience",
         "projects": "Projects"
   },
   "languages_map": {
