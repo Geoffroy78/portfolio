@@ -9,13 +9,28 @@
         </div>
 
         <ul class="navbar-links">
-            <li><a href="#profile">Profil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#posts">Expériences</a></li>
+            <li><a href="#profile">{{ data.navbar.profile if data.navbar.profile else "Profile" }}</a></li>
+            <li><a href="#competences">{{ data.navbar.competences if data.navbar.competences else "Competences" }}</a></li>
+            <li><a href="#experiences">{{ data.navbar.experiences if data.navbar.experiences else "Experiences" }}</a></li>
             {% if data.projects %}
-            <li><a href="#projects">Projets</a></li>
+            <li><a href="#projects">{{ data.navbar.projects if data.navbar.projects else "Projects" }}</a></li>
             {% endif %}
         </ul>
+
+        <!-- RIGHT SIDE WRAPPER -->
+        <div class="navbar-right">
+            <div class="language-switcher">
+                <button class="lang-btn">🌍</button>
+
+                <div class="lang-menu">
+                    {% for code, lang in data.languages_map.items() %}
+                        <a href="{{ url_for('main.index', lang=code) }}">
+                            <span class="{{ lang.icon }}"></span> {{ lang.label }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
 
     </div>
 </nav>

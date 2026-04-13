@@ -4,6 +4,28 @@
     "objectif" : "Ingénieur généraliste titulaire d'un double diplôme, spécialisé en systèmes embarqués et technologies de l’information.\nMon objectif est de concevoir, développer et déployer des solutions innovantes en intelligence artificielle et systèmes embarqués (drone, smartphone, robot ...).",
     "linkedin": "https://www.linkedin.com/in/geoffroy-granier-4b62081b6/",
     "github": "https://github.com/Geoffroy78/",
+    "navbar": {
+        "profile": "Profil",
+        "competences": "Compétences",
+        "experiences": "Expériences",
+        "projects": "Projets"
+    },
+    "languages_map": {
+        "fr": {
+            "label": "Français",
+            "icon": "fi fi-fr"
+        },
+        "en": {
+            "label": "English",
+            "icon": "fi fi-gb"
+        },
+        "es": {
+            "label": "Espagnol",
+            "icon": "fi fi-es"
+        }
+    },
+    "download": "Télécharger CV",
+    "all_competences": "Tout",
     "posts": [
         {
             "title": "Ingénieur logiciels embarqués",

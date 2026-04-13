@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./app/static/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../app/static/images/favicon.ico" type="image/x-icon">
     <title>Portfolio - Geoffroy GRANIER</title>
     <!-- CSS global -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons/css/flag-icons.min.css">
     <!-- <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />   -->
-    <link rel="stylesheet" href="./app/static/css/style.css">
-    <link rel="stylesheet" href="./app/static/css/navbar.css">
-    <link rel="stylesheet" href="./app/static/css/profile.css">
-    <link rel="stylesheet" href="./app/static/css/competences.css">
-    <link rel="stylesheet" href="./app/static/css/post-card.css">
-    <link rel="stylesheet" href="./app/static/css/project-card.css">
-    <link rel="stylesheet" href="./app/static/css/contact.css">
-    <link rel="stylesheet" href="./app/static/css/footer.css">
+    <link rel="stylesheet" href="../app/static/css/style.css">
+    <link rel="stylesheet" href="../app/static/css/navbar.css">
+    <link rel="stylesheet" href="../app/static/css/profile.css">
+    <link rel="stylesheet" href="../app/static/css/competences.css">
+    <link rel="stylesheet" href="../app/static/css/post-card.css">
+    <link rel="stylesheet" href="../app/static/css/project-card.css">
+    <link rel="stylesheet" href="../app/static/css/contact.css">
+    <link rel="stylesheet" href="../app/static/css/footer.css">
     <!-- Google Fonts exemple -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -36,11 +36,11 @@
         </div>
 
         <ul class="navbar-links">
-            <li><a href="#profile">Profil</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#profile">Perfil</a></li>
+            <li><a href="#competences">Competencias</a></li>
+            <li><a href="#experiences">Experiencias</a></li>
             
-            <li><a href="#projects">Projets</a></li>
+            <li><a href="#projects">Proyectos</a></li>
             
         </ul>
 
@@ -51,16 +51,16 @@
 
                 <div class="lang-menu">
                     
-                        <a href="./">
+                        <a href="../">
                             <span class="fi fi-fr"></span> Français
                         </a>
                     
-                        <a href="./en/">
+                        <a href="../en/">
                             <span class="fi fi-gb"></span> English
                         </a>
                     
-                        <a href="./es/">
-                            <span class="fi fi-es"></span> Espagnol
+                        <a href="../es/">
+                            <span class="fi fi-es"></span> Español
                         </a>
                     
                 </div>
@@ -80,51 +80,51 @@
         <!-- Colonne gauche -->
         <div class="left">
             <h1>Geoffroy GRANIER</h1>
-            <h3>Ingénieur Systèmes Embarqués &amp; IA</h3>
+            <h3>Ingeniero de Sistemas Embebidos e IA</h3>
             <!-- <div class="competences-marquee">
                 
-                    <span>Systèmes embarqués</span>
+                    <span>Sistemas embebidos</span>
                 
                     <span>IA</span>
                 
-                    <span>Langages de Programmation</span>
+                    <span>Lenguajes de programación</span>
                 
-                    <span>Protocoles</span>
+                    <span>Protocolos</span>
                 
-                    <span>Autres</span>
+                    <span>Otros</span>
                 
             </div> -->
 
             <p class="objectif">
-                Ingénieur généraliste titulaire d&#39;un double diplôme, spécialisé en systèmes embarqués et technologies de l’information.
-Mon objectif est de concevoir, développer et déployer des solutions innovantes en intelligence artificielle et systèmes embarqués (drone, smartphone, robot ...).
+                Ingeniero generalista con doble titulación, especializado en sistemas embebidos y tecnologías de la información.
+Mi objetivo es diseñar, desarrollar y desplegar soluciones innovadoras en inteligencia artificial y sistemas embebidos (drones, smartphones, robots...).
             </p>
         </div>
 
         <!-- Colonne droite -->
         <div class="right">
-            <img src="./app/static/images/geoffroy.png" alt="Photo de Geoffroy GRANIER">
-            <a class="btn-cv" href="./app/static/cv/CV_Geoffroy_GRANIER.pdf" download target="_blank">Télécharger CV</a>
+            <img src="../app/static/images/geoffroy.png" alt="Photo de Geoffroy GRANIER">
+            <a class="btn-cv" href="../app/static/cv/CV_Geoffroy_GRANIER_english.pdf" download target="_blank">Descargar CV</a>
         </div>
     </div>
 </section>
 
 <!-- Section 1: Compétences -->
 <section id="competences" class="section-competences">
-    <h2>Compétences</h2>
+    <h2>Competencias</h2>
     <!-- boutons filtre -->
     <div class="competences-filters">
-        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn active" data-filter="all">Todo</button>
         
-        <button class="filter-btn" data-filter="Systèmes embarqués">Systèmes embarqués</button>
+        <button class="filter-btn" data-filter="Sistemas embebidos">Sistemas embebidos</button>
         
         <button class="filter-btn" data-filter="IA">IA</button>
         
-        <button class="filter-btn" data-filter="Langages de Programmation">Langages de Programmation</button>
+        <button class="filter-btn" data-filter="Lenguajes de programación">Lenguajes de programación</button>
         
-        <button class="filter-btn" data-filter="Protocoles">Protocoles</button>
+        <button class="filter-btn" data-filter="Protocolos">Protocolos</button>
         
-        <button class="filter-btn" data-filter="Autres">Autres</button>
+        <button class="filter-btn" data-filter="Otros">Otros</button>
         
     </div>
     <!-- grille compétences -->
@@ -132,7 +132,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -144,7 +144,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -156,7 +156,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -168,7 +168,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -180,7 +180,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -192,7 +192,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -204,7 +204,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -216,7 +216,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -228,7 +228,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -240,19 +240,15 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
-                <div class="skill-icon">
-                    <i class="fas fa-microchip"></i>
-                </div>
-                
 
-                <span>Microcontroleur</span>
+                <span>Microcontrolador</span>
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -264,7 +260,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Systèmes embarqués">
+            <div class="skill-card" data-category="Sistemas embebidos">
 
                 
                 <div class="skill-icon">
@@ -305,12 +301,8 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             <div class="skill-card" data-category="IA">
 
                 
-                <div class="skill-icon">
-                    <i class="fas fa-object-group"></i>
-                </div>
-                
 
-                <span>Segmentation Sémantique</span>
+                <span>Segmentación semántica</span>
             </div>
             
             
@@ -364,7 +356,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -376,7 +368,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -388,7 +380,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -400,7 +392,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -412,7 +404,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -424,7 +416,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -436,7 +428,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -448,7 +440,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -460,7 +452,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -472,7 +464,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Langages de Programmation">
+            <div class="skill-card" data-category="Lenguajes de programación">
 
                 
                 <div class="skill-icon">
@@ -486,7 +478,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -498,7 +490,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -510,7 +502,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -522,7 +514,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -534,7 +526,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -546,7 +538,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -558,7 +550,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -570,7 +562,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Protocoles">
+            <div class="skill-card" data-category="Protocolos">
 
                 
                 <div class="skill-icon">
@@ -584,7 +576,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             
             
-            <div class="skill-card" data-category="Autres">
+            <div class="skill-card" data-category="Otros">
 
                 
                 <div class="skill-icon">
@@ -596,7 +588,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Autres">
+            <div class="skill-card" data-category="Otros">
 
                 
                 <div class="skill-icon">
@@ -608,7 +600,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Autres">
+            <div class="skill-card" data-category="Otros">
 
                 
                 <div class="skill-icon">
@@ -620,7 +612,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
             </div>
             
             
-            <div class="skill-card" data-category="Autres">
+            <div class="skill-card" data-category="Otros">
 
                 
                 <div class="skill-icon">
@@ -628,7 +620,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
                 </div>
                 
 
-                <span>Pilotage de drones</span>
+                <span>Pilotaje de drones</span>
             </div>
             
         
@@ -637,16 +629,16 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
 <!-- Section 2: Expériences -->
 <section id="experiences" class="section-posts">
-    <h2>Expériences</h2>
+    <h2>Experiencias</h2>
     <div class="grid-container">
         
             <!-- app/templates/components/post_card.html -->
 <div class="card">
-    <h3>Ingénieur logiciels embarqués</h3>
+    <h3>Ingeniero de software embebido</h3>
     <p class="company">LASSENA</p>
-    <p class="description">Développement d’une solution interne de gestion d’eSIM (eUICC) avec automatisation et supervision des opérations IoT.</p>
+    <p class="description">Desarrollo de una solución interna de gestión de eSIM (eUICC) con automatización y supervisión de operaciones IoT.</p>
     
-    <p class="dates">Jan 2025 - Juil 2025</p>
+    <p class="dates">Ene 2025 - Jul 2025</p>
     
 
     <p id="detail-contexte" class="hidden"></p>
@@ -655,11 +647,11 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             <!-- app/templates/components/post_card.html -->
 <div class="card">
-    <h3>Ingénieur systèmes</h3>
+    <h3>Ingeniero de sistemas</h3>
     <p class="company">Thales</p>
-    <p class="description">Création d’un outil Python automatisant les mises à jour firmware des modems avec détection et interface graphique.</p>
+    <p class="description">Creación de una herramienta en Python para automatizar actualizaciones de firmware de módems con detección e interfaz gráfica.</p>
     
-    <p class="dates">Sept 2023 - Déc 2023</p>
+    <p class="dates">Sep 2023 - Dic 2023</p>
     
 
     <p id="detail-contexte" class="hidden"></p>
@@ -668,11 +660,11 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             <!-- app/templates/components/post_card.html -->
 <div class="card">
-    <h3>Ingénieur systèmes</h3>
+    <h3>Ingeniero de sistemas</h3>
     <p class="company">Thales</p>
-    <p class="description">Développement d’un système embarqué de collecte et de monitoring temps réel de données capteurs pour un véhicule autonome.</p>
+    <p class="description">Desarrollo de un sistema embebido de recopilación y monitorización en tiempo real de datos de sensores para un vehículo autónomo.</p>
     
-    <p class="dates">Fév 2023 - Sept 2023</p>
+    <p class="dates">Feb 2023 - Sep 2023</p>
     
 
     <p id="detail-contexte" class="hidden"></p>
@@ -681,11 +673,11 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             <!-- app/templates/components/post_card.html -->
 <div class="card">
-    <h3>Ingénieur logiciels embarqués</h3>
+    <h3>Ingeniero de software embebido</h3>
     <p class="company">TwinswHeel</p>
-    <p class="description">Développement d’outils de tests automatiques pour évaluer les performances et le comportement de robots autonomes de livraison.</p>
+    <p class="description">Desarrollo de herramientas de pruebas automáticas para evaluar el rendimiento y comportamiento de robots autónomos de entrega.</p>
     
-    <p class="dates">Avr 2022 - Juil 2022</p>
+    <p class="dates">Abr 2022 - Jul 2022</p>
     
 
     <p id="detail-contexte" class="hidden"></p>
@@ -694,11 +686,11 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         
             <!-- app/templates/components/post_card.html -->
 <div class="card">
-    <h3>Ouvrier sur chaîne</h3>
+    <h3>Operario de producción</h3>
     <p class="company">Stellantis</p>
-    <p class="description">Participation à la chaîne de montage au secteur ferrage du site de Poissy avec installation de pièces sur robots industriels.</p>
+    <p class="description">Participación en la línea de montaje en el sector de soldadura de la planta de Poissy, instalando piezas en robots industriales.</p>
     
-    <p class="dates">Juil 2021 - Août 2021</p>
+    <p class="dates">Jul 2021 - Ago 2021</p>
     
 
     <p id="detail-contexte" class="hidden"></p>
@@ -710,7 +702,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
 <!-- Section 3: Projets -->
 <section id="projects" class="section-posts">
-    <h2>Projets</h2>
+    <h2>Proyectos</h2>
     <div class="grid-container">
         
             <!-- app/templates/components/project_card.html -->
@@ -718,14 +710,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/irm_ai.png" 
-             alt="Segmentation d’IRM cardiaques (ACDC Challenge)">
+        <img src="../app/static/images/irm_ai.png" 
+             alt="Segmentación de resonancia magnética cardíaca (ACDC Challenge)">
     </div>
     
 
-    <h3>Segmentation d’IRM cardiaques (ACDC Challenge)</h3>
+    <h3>Segmentación de resonancia magnética cardíaca (ACDC Challenge)</h3>
     <p class="school">École de technologie supérieure (ÉTS)</p>
-    <p class="description">Développement de modèles U-Net pour segmenter automatiquement des IRM cardiaques (ventricules et myocarde) avec apprentissage semi-supervisé Mean Teacher afin d’améliorer la précision du diagnostic médical.</p>
+    <p class="description">Desarrollo de modelos U-Net para segmentar automáticamente imágenes de resonancia magnética cardíaca (ventrículos y miocardio) utilizando aprendizaje semi-supervisado Mean Teacher para mejorar la precisión diagnóstica.</p>
 
     <!-- Skills -->
     
@@ -743,7 +735,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2024 - Déc 2024</p>
+    <p class="dates">Sep 2024 - Dic 2024</p>
     
 
 </div>
@@ -753,14 +745,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/vr_bowling.jpg" 
-             alt="Jeu de Bowling en Réalité Virtuelle">
+        <img src="../app/static/images/vr_bowling.jpg" 
+             alt="Juego de bolos en realidad virtual">
     </div>
     
 
-    <h3>Jeu de Bowling en Réalité Virtuelle</h3>
+    <h3>Juego de bolos en realidad virtual</h3>
     <p class="school">École de technologie supérieure (ÉTS)</p>
-    <p class="description">Développement d’un environnement immersif de bowling en réalité virtuelle avec Meta Quest 3 pour analyser l’impact de l’entraînement VR sur les performances réelles.</p>
+    <p class="description">Desarrollo de un entorno inmersivo de bolos en realidad virtual con Meta Quest 3 para analizar el impacto del entrenamiento VR en el rendimiento real.</p>
 
     <!-- Skills -->
     
@@ -778,7 +770,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2024 - Déc 2024</p>
+    <p class="dates">Sep 2024 - Dic 2024</p>
     
 
 </div>
@@ -788,14 +780,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/churn_ai.png" 
-             alt="Prédiction du désabonnement client">
+        <img src="../app/static/images/churn_ai.png" 
+             alt="Predicción de abandono de clientes">
     </div>
     
 
-    <h3>Prédiction du désabonnement client</h3>
+    <h3>Predicción de abandono de clientes</h3>
     <p class="school">École de technologie supérieure (ÉTS)</p>
-    <p class="description">Création d’un modèle de Machine Learning pour prédire le churn client dans les télécommunications et déploiement dans une application PowerApps via Azure ML.</p>
+    <p class="description">Modelo de Machine Learning para predecir la pérdida de clientes en telecomunicaciones y despliegue mediante PowerApps con Azure ML.</p>
 
     <!-- Skills -->
     
@@ -813,7 +805,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Avr 2024 - Juin 2024</p>
+    <p class="dates">Abr 2024 - Jun 2024</p>
     
 
 </div>
@@ -823,14 +815,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/dropout_ai.png" 
-             alt="Prédiction d’abandon scolaire par IA">
+        <img src="../app/static/images/dropout_ai.png" 
+             alt="Predicción de abandono escolar con IA">
     </div>
     
 
-    <h3>Prédiction d’abandon scolaire par IA</h3>
+    <h3>Predicción de abandono escolar con IA</h3>
     <p class="school">École de technologie supérieure (ÉTS)</p>
-    <p class="description">Développement d’un système d’IA permettant de prédire le risque d’abandon scolaire à partir de données étudiantes avec API Flask et déploiement cloud.</p>
+    <p class="description">Sistema de IA para predecir el riesgo de abandono escolar a partir de datos estudiantiles con API Flask y despliegue en la nube.</p>
 
     <!-- Skills -->
     
@@ -848,7 +840,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Avr 2024 - Juin 2024</p>
+    <p class="dates">Abr 2024 - Jun 2024</p>
     
 
 </div>
@@ -858,14 +850,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/vision_ai.png" 
-             alt="Détection d’objets et estimation de profondeur">
+        <img src="../app/static/images/vision_ai.png" 
+             alt="Detección de objetos y estimación de profundidad">
     </div>
     
 
-    <h3>Détection d’objets et estimation de profondeur</h3>
+    <h3>Detección de objetos y estimación de profundidad</h3>
     <p class="school">École de technologie supérieure (ÉTS)</p>
-    <p class="description">Pipeline de vision par ordinateur combinant YOLOv8 et estimation de profondeur monoculaire pour analyser une scène à partir d’une seule image.</p>
+    <p class="description">Pipeline de visión por computadora que combina YOLOv8 y estimación de profundidad monocular para analizar una escena desde una sola imagen.</p>
 
     <!-- Skills -->
     
@@ -883,7 +875,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Jan 2024 - Avr 2024</p>
+    <p class="dates">Ene 2024 - Abr 2024</p>
     
 
 </div>
@@ -893,14 +885,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/raspberry_cluster.png" 
-             alt="Cluster Raspberry Pi – Simulation de trafic">
+        <img src="../app/static/images/raspberry_cluster.png" 
+             alt="Cluster Raspberry Pi – Simulación de tráfico">
     </div>
     
 
-    <h3>Cluster Raspberry Pi – Simulation de trafic</h3>
+    <h3>Cluster Raspberry Pi – Simulación de tráfico</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Création d’un cluster de Raspberry Pi simulant un réseau de feux de circulation coordonnés via communication distribuée.</p>
+    <p class="description">Creación de un cluster de Raspberry Pi simulando una red de semáforos coordinados mediante comunicación distribuida.</p>
 
     <!-- Skills -->
     
@@ -916,7 +908,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2021 - Déc 2021</p>
+    <p class="dates">Sep 2021 - Dic 2021</p>
     
 
 </div>
@@ -926,14 +918,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/donkey_kong_pic.png" 
-             alt="Jeu Donkey Kong sur microcontrôleur PIC">
+        <img src="../app/static/images/donkey_kong_pic.png" 
+             alt="Juego Donkey Kong en microcontrolador PIC">
     </div>
     
 
-    <h3>Jeu Donkey Kong sur microcontrôleur PIC</h3>
+    <h3>Juego Donkey Kong en microcontrolador PIC</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Développement d’un jeu 2D embarqué sur microcontrôleur PIC avec affichage LCD, gestion des interruptions et sauvegarde EEPROM.</p>
+    <p class="description">Desarrollo de un juego 2D embebido en microcontrolador PIC con pantalla LCD, interrupciones y almacenamiento EEPROM.</p>
 
     <!-- Skills -->
     
@@ -949,7 +941,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2021 - Déc 2021</p>
+    <p class="dates">Sep 2021 - Dic 2021</p>
     
 
 </div>
@@ -959,14 +951,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/rfid_system.jpg" 
-             alt="Système RFID de reconnaissance des cartes étudiantes">
+        <img src="../app/static/images/rfid_system.jpg" 
+             alt="Sistema de tarjetas RFID estudiantiles">
     </div>
     
 
-    <h3>Système RFID de reconnaissance des cartes étudiantes</h3>
+    <h3>Sistema de tarjetas RFID estudiantiles</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Conception d’un système complet de lecture de cartes RFID avec PCB, microcontrôleur, interface Java et base de données pour la gestion des accès.</p>
+    <p class="description">Sistema completo de lectura RFID con PCB, microcontrolador, interfaz Java y base de datos para gestión de accesos.</p>
 
     <!-- Skills -->
     
@@ -984,7 +976,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2021 - Déc 2021</p>
+    <p class="dates">Sep 2021 - Dic 2021</p>
     
 
 </div>
@@ -994,14 +986,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/recruitment_app.png" 
-             alt="Application de gestion de recrutement (Java)">
+        <img src="../app/static/images/recruitment_app.png" 
+             alt="Aplicación de gestión de contratación (Java)">
     </div>
     
 
-    <h3>Application de gestion de recrutement (Java)</h3>
+    <h3>Aplicación de gestión de contratación (Java)</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Développement d’une application Java orientée objet pour gérer les offres d’emploi, les candidatures et les interactions entre recruteurs et candidats.</p>
+    <p class="description">Aplicación Java orientada a objetos para gestionar ofertas de empleo, candidaturas e interacciones entre reclutadores y candidatos.</p>
 
     <!-- Skills -->
     
@@ -1017,7 +1009,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2020 - Déc 2020</p>
+    <p class="dates">Sep 2020 - Dic 2020</p>
     
 
 </div>
@@ -1027,14 +1019,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/airport_database.png" 
-             alt="Gestion de base de données d’un aéroport">
+        <img src="../app/static/images/airport_database.png" 
+             alt="Sistema de gestión de base de datos aeroportuaria">
     </div>
     
 
-    <h3>Gestion de base de données d’un aéroport</h3>
+    <h3>Sistema de gestión de base de datos aeroportuaria</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Développement d’un système de gestion d’aéroport utilisant MySQL et une application C# pour gérer vols, passagers, bagages et personnel.</p>
+    <p class="description">Sistema de gestión de aeropuertos con MySQL y aplicación C# para administrar vuelos, pasajeros, equipaje y personal.</p>
 
     <!-- Skills -->
     
@@ -1050,7 +1042,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2019 - Déc 2019</p>
+    <p class="dates">Sep 2019 - Dic 2019</p>
     
 
 </div>
@@ -1060,14 +1052,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/ece_cup_car.png" 
-             alt="ECE CUP – Voiture télécommandée Arduino">
+        <img src="../app/static/images/ece_cup_car.png" 
+             alt="ECE CUP – Coche Arduino controlado a distancia">
     </div>
     
 
-    <h3>ECE CUP – Voiture télécommandée Arduino</h3>
+    <h3>ECE CUP – Coche Arduino controlado a distancia</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Conception et programmation d’une voiture télécommandée basée sur Arduino capable d’interagir avec son environnement via une application mobile BLINK.</p>
+    <p class="description">Diseño y programación de un coche Arduino controlado a distancia que interactúa con su entorno mediante una app móvil BLINK.</p>
 
     <!-- Skills -->
     
@@ -1083,7 +1075,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Sept 2019 - Déc 2019</p>
+    <p class="dates">Sep 2019 - Dic 2019</p>
     
 
 </div>
@@ -1093,14 +1085,14 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 
     
     <div class="card-image">
-        <img src="./app/static/images/smart_home_arduino.jpg" 
-             alt="Maison connectée avec Arduino">
+        <img src="../app/static/images/smart_home_arduino.jpg" 
+             alt="Casa inteligente con Arduino">
     </div>
     
 
-    <h3>Maison connectée avec Arduino</h3>
+    <h3>Casa inteligente con Arduino</h3>
     <p class="school">ECE Paris</p>
-    <p class="description">Conception d’une maquette de maison connectée pilotée par Arduino permettant de gérer automatiquement l’éclairage selon la luminosité, la consommation d’énergie et l’ouverture des fenêtres. Un écran LCD1602 affiche les informations des différents capteurs.</p>
+    <p class="description">Diseño de una maqueta de casa inteligente con Arduino para gestionar iluminación, consumo energético y apertura de ventanas. Pantalla LCD1602 para sensores.</p>
 
     <!-- Skills -->
     
@@ -1118,7 +1110,7 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
     
 
     
-    <p class="dates">Jan 2018 - Mars 2018</p>
+    <p class="dates">Ene 2018 - Mar 2018</p>
     
 
 </div>
@@ -1157,13 +1149,13 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
         <div class="footer-right">
             
             <a href="https://www.linkedin.com/in/geoffroy-granier-4b62081b6/" target="_blank">
-                <img src="./app/static/images/linkedin.svg" alt="LinkedIn">
+                <img src="../app/static/images/linkedin.svg" alt="LinkedIn">
             </a>
             
 
             
             <a href="https://github.com/Geoffroy78/" target="_blank">
-                <img src="./app/static/images/github.svg" alt="GitHub">
+                <img src="../app/static/images/github.svg" alt="GitHub">
             </a>
             
         </div>
@@ -1173,6 +1165,6 @@ Mon objectif est de concevoir, développer et déployer des solutions innovantes
 </footer>
 
     <!-- JS global -->
-    <script src="./app/static/js/main.js"></script>
+    <script src="../app/static/js/main.js"></script>
 </body>
 </html>

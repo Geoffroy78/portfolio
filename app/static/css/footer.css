@@ -55,7 +55,7 @@
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
     .footer-content {
         flex-direction: column;
         text-align: center;

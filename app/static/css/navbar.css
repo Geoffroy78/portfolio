@@ -12,19 +12,26 @@
 }
 
 .navbar .container {
-    max-width: 1100px;
+    /* max-width: 1100px; */
+    height: 50px;
     margin: auto;
     padding: 0.8rem 1rem;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    justify-content: space-between; /* CHANGÉ (IMPORTANT) */
     align-items: center;
     position: relative;
+    /* border: 2px solid red; */
 }
 
 .navbar-links {
     list-style: none;
     display: flex;
     gap: 2.5rem;
+    /* ❗ PLUS ABSOLUTE */
+    position: static;   
+    transform: none;
+    margin: 0 auto;
 }
 
 .navbar-links a {
@@ -79,6 +86,88 @@
     border-radius: 3px;
 }
 
+.navbar-right {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.lang-btn {
+    background: var(--color-monochromatic-1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.lang-btn:hover {
+    transform: scale(1.05);
+}
+
+.lang-menu {
+    position: absolute;
+    right: 0;
+    top: 120%;
+    background: var(--color-monochromatic-1);
+    border-radius: 10px;
+    overflow: hidden;
+
+    min-width: 140px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 9999;
+}
+
+.lang-menu a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    padding: 0.6rem 0.8rem;
+    text-decoration: none;
+    color: white;
+
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.lang-menu a:hover {
+    background: var(--color-monochromatic-4);
+    color: black;
+}
+
+.flag {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* Show dropdown on hover */
+.language-switcher:hover .lang-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.fi {
+    margin-right: 8px;
+}
+
 /* ===================== */
 /* RESPONSIVE MOBILE     */
 /* ===================== */
@@ -122,5 +211,11 @@
         visibility: visible;
         pointer-events: auto;
         transform: translate3d(0, 0, 0);
+    }
+
+    .lang-menu.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
     }
 }

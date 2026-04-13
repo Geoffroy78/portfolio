@@ -70,3 +70,7 @@ if (form) {
 
     });
 };
+
+document.querySelector(".lang-btn").addEventListener("click", function () {
+    document.querySelector(".lang-menu").classList.toggle("active");
+});

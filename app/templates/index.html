@@ -23,17 +23,17 @@
         <!-- Colonne droite -->
         <div class="right">
             <img src="{{ url_for('static', filename='images/geoffroy.png') }}" alt="Photo de {{ data.user_name }}">
-            <a class="btn-cv" href="{{ url_for('main.download_cv') }}">Télécharger CV</a>
+            <a class="btn-cv" href="{{ url_for('main.download_cv', lang=lang) }}">{{ data.download }}</a>
         </div>
     </div>
 </section>
 
 <!-- Section 1: Compétences -->
 <section id="competences" class="section-competences">
-    <h2>Compétences</h2>
+    <h2>{{ data.navbar.competences }}</h2>
     <!-- boutons filtre -->
     <div class="competences-filters">
-        <button class="filter-btn active" data-filter="all">Tout</button>
+        <button class="filter-btn active" data-filter="all">{{ data.all_competences }}</button>
         {% for category in data.competences %}
         <button class="filter-btn" data-filter="{{ category }}">{{ category }}</button>
         {% endfor %}
@@ -59,8 +59,8 @@
 </section>
 
 <!-- Section 2: Expériences -->
-<section id="posts" class="section-posts">
-    <h2>Expériences professionnelles</h2>
+<section id="experiences" class="section-posts">
+    <h2>{{ data.navbar.experiences }}</h2>
     <div class="grid-container">
         {% for post in data.posts %}
             {% include 'components/post_card.html' %}
@@ -70,7 +70,7 @@
 
 <!-- Section 3: Projets -->
 <section id="projects" class="section-posts">
-    <h2>Projets</h2>
+    <h2>{{ data.navbar.projects }}</h2>
     <div class="grid-container">
         {% for project in data.projects %}
             {% include 'components/project_card.html' %}
