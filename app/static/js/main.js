@@ -71,6 +71,18 @@ if (form) {
     });
 };
 
-document.querySelector(".lang-btn").addEventListener("click", function () {
-    document.querySelector(".lang-menu").classList.toggle("active");
+// document.querySelector(".lang-btn").addEventListener("click", function () {
+//     document.querySelector(".lang-menu").classList.toggle("active");
+// });
+
+const langBtn = document.querySelector(".lang-btn");
+const langMenu = document.querySelector(".lang-menu");
+langBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    langMenu.classList.toggle("active");
+});
+
+// ferme si clic ailleurs
+document.addEventListener("click", () => {
+    langMenu.classList.remove("active");
 });
